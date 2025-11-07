@@ -1,11 +1,13 @@
+"Exceptions"
 class ProductException(Exception):
-    pass 
-
+    "Product Exception"
+    pass
 class ProductNotFoundError(ProductException):
-    pass 
-
+    "Product Not Found Error"
+    pass
 class ProductAlreadyExistError(ProductException):
-    pass 
-
+    "Product Already Exist Error"
+    pass
 class DatabaseError(ProductException):
-    pass 
+    "Database Error"
+    pass

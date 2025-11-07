@@ -1,12 +1,12 @@
+"sends the email while created new product"
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email import encoders
-
 from app.config import app_password, from_address, to_address
-
 def send_gmail(to_address, subject, body):
+    "sending email"
     try:
         # Create the email
         msg = MIMEMultipart()
@@ -14,7 +14,6 @@ def send_gmail(to_address, subject, body):
         msg["To"] = to_address
         msg["Subject"] = subject
         msg.attach(MIMEText(body, "plain"))
-        
         # Connect to Gmail's SMTP server
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
@@ -25,8 +24,8 @@ def send_gmail(to_address, subject, body):
     except Exception as e:
         print("Error:", e)
         return False
-
 def send_gmail_attach(to_address, subject, body, attachments):
+    "sending gmail attach"
     try:
         # Create the email
         msg = MIMEMultipart()
@@ -34,14 +33,12 @@ def send_gmail_attach(to_address, subject, body, attachments):
         msg["To"] = to_address
         msg["Subject"] = subject
         msg.attach(MIMEText(body, "plain"))
-        
         for attachment in attachments:
             # If attachment is provided
             if attachment:
                 with open(attachment, "rb") as file:
                     part = MIMEBase("application", "octet-stream")
                     part.set_payload(file.read())
-
                 encoders.encode_base64(part)
                 part.add_header(
                     "Content-Disposition",

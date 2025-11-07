@@ -2534,3 +2534,1451 @@ FROM products
 2025-11-07 08:00:35,257 [INFO] ROLLBACK
 2025-11-07 08:00:35,259 [INFO] 127.0.0.1 - - [07/Nov/2025 08:00:35] "GET /products HTTP/1.1" 200 -
 2025-11-07 08:01:05,602 [INFO] 127.0.0.1 - - [07/Nov/2025 08:01:05] "[31m[1mPUT /products HTTP/1.1[0m" 405 -
+2025-11-07 08:40:45,744 [INFO] BEGIN (implicit)
+2025-11-07 08:40:45,745 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:40:45,745 [INFO] [raw sql] ()
+2025-11-07 08:40:45,752 [INFO] COMMIT
+2025-11-07 08:40:45,817 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-07 08:40:45,817 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-07 08:40:45,819 [INFO]  * Restarting with stat
+2025-11-07 08:40:46,644 [INFO] BEGIN (implicit)
+2025-11-07 08:40:46,644 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:40:46,645 [INFO] [raw sql] ()
+2025-11-07 08:40:46,646 [INFO] COMMIT
+2025-11-07 08:40:46,667 [WARNING]  * Debugger is active!
+2025-11-07 08:40:46,672 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:40:55,495 [INFO] BEGIN (implicit)
+2025-11-07 08:40:55,499 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 08:40:55,500 [INFO] [generated in 0.00051s] ()
+2025-11-07 08:40:55,501 [INFO] Read all products.
+2025-11-07 08:40:55,502 [INFO] ROLLBACK
+2025-11-07 08:40:55,503 [INFO] 127.0.0.1 - - [07/Nov/2025 08:40:55] "GET /products HTTP/1.1" 200 -
+2025-11-07 08:41:07,341 [INFO] BEGIN (implicit)
+2025-11-07 08:41:07,343 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:41:07,345 [INFO] [generated in 0.00110s] (5, 1, 0)
+2025-11-07 08:41:07,348 [INFO] Read product for given id.
+2025-11-07 08:41:07,350 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:41:07,351 [INFO] [cached since 0.007624s ago] (5, 1, 0)
+2025-11-07 08:41:07,353 [INFO] Read product for given id.
+2025-11-07 08:41:07,357 [INFO] UPDATE products SET quantity=?, price=? WHERE products.id = ?
+2025-11-07 08:41:07,359 [INFO] [generated in 0.00231s] (15, 9500.0, 5)
+2025-11-07 08:41:07,364 [INFO] COMMIT
+2025-11-07 08:41:07,376 [INFO] Product Updated Successfully
+2025-11-07 08:41:07,377 [INFO] BEGIN (implicit)
+2025-11-07 08:41:07,377 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:41:07,379 [INFO] [cached since 0.03492s ago] (5, 1, 0)
+2025-11-07 08:41:07,380 [INFO] Read product for given id.
+2025-11-07 08:41:07,381 [INFO] ROLLBACK
+2025-11-07 08:41:07,382 [INFO] 127.0.0.1 - - [07/Nov/2025 08:41:07] "PUT /products/5 HTTP/1.1" 200 -
+2025-11-07 08:46:14,050 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_crud.py', reloading
+2025-11-07 08:46:14,242 [INFO]  * Restarting with stat
+2025-11-07 08:46:15,488 [INFO] BEGIN (implicit)
+2025-11-07 08:46:15,489 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:46:15,489 [INFO] [raw sql] ()
+2025-11-07 08:46:15,490 [INFO] COMMIT
+2025-11-07 08:46:15,512 [WARNING]  * Debugger is active!
+2025-11-07 08:46:15,514 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:47:30,933 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 08:47:31,045 [INFO]  * Restarting with stat
+2025-11-07 08:47:31,889 [INFO] BEGIN (implicit)
+2025-11-07 08:47:31,890 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:47:31,890 [INFO] [raw sql] ()
+2025-11-07 08:47:31,891 [INFO] COMMIT
+2025-11-07 08:47:31,911 [WARNING]  * Debugger is active!
+2025-11-07 08:47:31,914 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:47:35,955 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 08:47:36,053 [INFO]  * Restarting with stat
+2025-11-07 08:47:36,909 [INFO] BEGIN (implicit)
+2025-11-07 08:47:36,909 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:47:36,909 [INFO] [raw sql] ()
+2025-11-07 08:47:36,910 [INFO] COMMIT
+2025-11-07 08:47:36,933 [WARNING]  * Debugger is active!
+2025-11-07 08:47:36,936 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:47:38,965 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 08:47:39,043 [INFO]  * Restarting with stat
+2025-11-07 08:47:40,005 [INFO] BEGIN (implicit)
+2025-11-07 08:47:40,006 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:47:40,006 [INFO] [raw sql] ()
+2025-11-07 08:47:40,008 [INFO] COMMIT
+2025-11-07 08:47:40,034 [WARNING]  * Debugger is active!
+2025-11-07 08:47:40,036 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:47:46,090 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 08:47:46,184 [INFO]  * Restarting with stat
+2025-11-07 08:47:47,050 [INFO] BEGIN (implicit)
+2025-11-07 08:47:47,051 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:47:47,051 [INFO] [raw sql] ()
+2025-11-07 08:47:47,052 [INFO] COMMIT
+2025-11-07 08:47:47,069 [WARNING]  * Debugger is active!
+2025-11-07 08:47:47,072 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:47:49,096 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 08:47:49,199 [INFO]  * Restarting with stat
+2025-11-07 08:47:50,043 [INFO] BEGIN (implicit)
+2025-11-07 08:47:50,043 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:47:50,045 [INFO] [raw sql] ()
+2025-11-07 08:47:50,045 [INFO] COMMIT
+2025-11-07 08:47:50,066 [WARNING]  * Debugger is active!
+2025-11-07 08:47:50,070 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:47:51,085 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 08:47:51,195 [INFO]  * Restarting with stat
+2025-11-07 08:47:52,158 [INFO] BEGIN (implicit)
+2025-11-07 08:47:52,160 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:47:52,160 [INFO] [raw sql] ()
+2025-11-07 08:47:52,160 [INFO] COMMIT
+2025-11-07 08:47:52,184 [WARNING]  * Debugger is active!
+2025-11-07 08:47:52,186 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:47:58,225 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 08:47:58,328 [INFO]  * Restarting with stat
+2025-11-07 08:47:59,167 [INFO] BEGIN (implicit)
+2025-11-07 08:47:59,168 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:47:59,168 [INFO] [raw sql] ()
+2025-11-07 08:47:59,169 [INFO] COMMIT
+2025-11-07 08:47:59,189 [WARNING]  * Debugger is active!
+2025-11-07 08:47:59,192 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:48:01,219 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 08:48:01,326 [INFO]  * Restarting with stat
+2025-11-07 08:48:02,314 [INFO] BEGIN (implicit)
+2025-11-07 08:48:02,315 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:48:02,315 [INFO] [raw sql] ()
+2025-11-07 08:48:02,318 [INFO] COMMIT
+2025-11-07 08:48:02,336 [WARNING]  * Debugger is active!
+2025-11-07 08:48:02,338 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:48:55,638 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:48:55,838 [INFO]  * Restarting with stat
+2025-11-07 08:48:56,671 [INFO] BEGIN (implicit)
+2025-11-07 08:48:56,672 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:48:56,673 [INFO] [raw sql] ()
+2025-11-07 08:48:56,674 [INFO] COMMIT
+2025-11-07 08:48:56,705 [WARNING]  * Debugger is active!
+2025-11-07 08:48:56,707 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:48:59,731 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:48:59,836 [INFO]  * Restarting with stat
+2025-11-07 08:49:00,701 [INFO] BEGIN (implicit)
+2025-11-07 08:49:00,702 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:49:00,702 [INFO] [raw sql] ()
+2025-11-07 08:49:00,703 [INFO] COMMIT
+2025-11-07 08:49:00,725 [WARNING]  * Debugger is active!
+2025-11-07 08:49:00,727 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:49:03,755 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:49:03,851 [INFO]  * Restarting with stat
+2025-11-07 08:49:04,728 [INFO] BEGIN (implicit)
+2025-11-07 08:49:04,729 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:49:04,730 [INFO] [raw sql] ()
+2025-11-07 08:49:04,731 [INFO] COMMIT
+2025-11-07 08:49:04,770 [WARNING]  * Debugger is active!
+2025-11-07 08:49:04,771 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:49:07,801 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:49:07,892 [INFO]  * Restarting with stat
+2025-11-07 08:49:08,782 [INFO] BEGIN (implicit)
+2025-11-07 08:49:08,782 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:49:08,783 [INFO] [raw sql] ()
+2025-11-07 08:49:08,784 [INFO] COMMIT
+2025-11-07 08:49:08,803 [WARNING]  * Debugger is active!
+2025-11-07 08:49:08,805 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:49:10,823 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:49:10,916 [INFO]  * Restarting with stat
+2025-11-07 08:49:11,829 [INFO] BEGIN (implicit)
+2025-11-07 08:49:11,830 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:49:11,831 [INFO] [raw sql] ()
+2025-11-07 08:49:11,832 [INFO] COMMIT
+2025-11-07 08:49:11,859 [WARNING]  * Debugger is active!
+2025-11-07 08:49:11,862 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:49:17,905 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:49:17,991 [INFO]  * Restarting with stat
+2025-11-07 08:49:18,867 [INFO] BEGIN (implicit)
+2025-11-07 08:49:18,868 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:49:18,868 [INFO] [raw sql] ()
+2025-11-07 08:49:18,869 [INFO] COMMIT
+2025-11-07 08:49:18,886 [WARNING]  * Debugger is active!
+2025-11-07 08:49:18,888 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:49:56,116 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:49:56,206 [INFO]  * Restarting with stat
+2025-11-07 08:49:57,066 [INFO] BEGIN (implicit)
+2025-11-07 08:49:57,067 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:49:57,068 [INFO] [raw sql] ()
+2025-11-07 08:49:57,070 [INFO] COMMIT
+2025-11-07 08:49:57,099 [WARNING]  * Debugger is active!
+2025-11-07 08:49:57,101 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:50:00,132 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:50:00,229 [INFO]  * Restarting with stat
+2025-11-07 08:50:01,147 [INFO] BEGIN (implicit)
+2025-11-07 08:50:01,148 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:50:01,148 [INFO] [raw sql] ()
+2025-11-07 08:50:01,150 [INFO] COMMIT
+2025-11-07 08:50:01,175 [WARNING]  * Debugger is active!
+2025-11-07 08:50:01,177 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:50:03,201 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:50:03,389 [INFO]  * Restarting with stat
+2025-11-07 08:50:04,628 [INFO] BEGIN (implicit)
+2025-11-07 08:50:04,629 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:50:04,629 [INFO] [raw sql] ()
+2025-11-07 08:50:04,630 [INFO] COMMIT
+2025-11-07 08:50:04,652 [WARNING]  * Debugger is active!
+2025-11-07 08:50:04,655 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:50:08,684 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:50:08,776 [INFO]  * Restarting with stat
+2025-11-07 08:50:09,745 [INFO] BEGIN (implicit)
+2025-11-07 08:50:09,745 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:50:09,746 [INFO] [raw sql] ()
+2025-11-07 08:50:09,747 [INFO] COMMIT
+2025-11-07 08:50:09,774 [WARNING]  * Debugger is active!
+2025-11-07 08:50:09,776 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:50:13,810 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:50:13,909 [INFO]  * Restarting with stat
+2025-11-07 08:50:14,772 [INFO] BEGIN (implicit)
+2025-11-07 08:50:14,773 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:50:14,773 [INFO] [raw sql] ()
+2025-11-07 08:50:14,774 [INFO] COMMIT
+2025-11-07 08:50:14,797 [WARNING]  * Debugger is active!
+2025-11-07 08:50:14,799 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:50:16,825 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:50:16,931 [INFO]  * Restarting with stat
+2025-11-07 08:50:17,962 [INFO] BEGIN (implicit)
+2025-11-07 08:50:17,963 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:50:17,963 [INFO] [raw sql] ()
+2025-11-07 08:50:17,964 [INFO] COMMIT
+2025-11-07 08:50:17,988 [WARNING]  * Debugger is active!
+2025-11-07 08:50:17,990 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:50:23,035 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 08:50:23,156 [INFO]  * Restarting with stat
+2025-11-07 08:50:24,232 [INFO] BEGIN (implicit)
+2025-11-07 08:50:24,233 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:50:24,234 [INFO] [raw sql] ()
+2025-11-07 08:50:24,235 [INFO] COMMIT
+2025-11-07 08:50:24,254 [WARNING]  * Debugger is active!
+2025-11-07 08:50:24,256 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:51:48,944 [INFO] BEGIN (implicit)
+2025-11-07 08:51:48,944 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:51:48,944 [INFO] [raw sql] ()
+2025-11-07 08:51:48,946 [INFO] COMMIT
+2025-11-07 08:51:48,978 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-07 08:51:48,978 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-07 08:51:48,979 [INFO]  * Restarting with stat
+2025-11-07 08:51:49,753 [INFO] BEGIN (implicit)
+2025-11-07 08:51:49,754 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:51:49,754 [INFO] [raw sql] ()
+2025-11-07 08:51:49,755 [INFO] COMMIT
+2025-11-07 08:51:49,777 [WARNING]  * Debugger is active!
+2025-11-07 08:51:49,778 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:52:12,858 [INFO] BEGIN (implicit)
+2025-11-07 08:52:12,865 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:52:12,866 [INFO] [generated in 0.00125s] (6, 1, 0)
+2025-11-07 08:52:12,869 [INFO] Read product for given id.
+2025-11-07 08:52:12,869 [INFO] ROLLBACK
+2025-11-07 08:52:12,870 [INFO] 127.0.0.1 - - [07/Nov/2025 08:52:12] "[33mGET /products/6 HTTP/1.1[0m" 404 -
+2025-11-07 08:52:26,425 [INFO] BEGIN (implicit)
+2025-11-07 08:52:26,427 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:52:26,429 [INFO] [cached since 13.56s ago] (5, 1, 0)
+2025-11-07 08:52:26,431 [INFO] Read product for given id.
+2025-11-07 08:52:26,432 [INFO] ROLLBACK
+2025-11-07 08:52:26,434 [INFO] 127.0.0.1 - - [07/Nov/2025 08:52:26] "GET /products/5 HTTP/1.1" 200 -
+2025-11-07 08:52:37,811 [INFO] BEGIN (implicit)
+2025-11-07 08:52:37,813 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:52:37,814 [INFO] [cached since 24.95s ago] (5, 1, 0)
+2025-11-07 08:52:37,817 [INFO] Read product for given id.
+2025-11-07 08:52:37,818 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:52:37,819 [INFO] [cached since 24.95s ago] (5, 1, 0)
+2025-11-07 08:52:37,820 [INFO] Read product for given id.
+2025-11-07 08:52:37,825 [INFO] UPDATE products SET quantity=?, price=? WHERE products.id = ?
+2025-11-07 08:52:37,825 [INFO] [generated in 0.00115s] ('25', 10000.0, 5)
+2025-11-07 08:52:37,828 [INFO] COMMIT
+2025-11-07 08:52:37,838 [INFO] Product Updated Successfully
+2025-11-07 08:52:37,839 [INFO] BEGIN (implicit)
+2025-11-07 08:52:37,840 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:52:37,842 [INFO] [cached since 24.98s ago] (5, 1, 0)
+2025-11-07 08:52:37,843 [INFO] Read product for given id.
+2025-11-07 08:52:37,843 [INFO] ROLLBACK
+2025-11-07 08:52:37,844 [INFO] 127.0.0.1 - - [07/Nov/2025 08:52:37] "PUT /products/5 HTTP/1.1" 200 -
+2025-11-07 08:52:43,674 [INFO] BEGIN (implicit)
+2025-11-07 08:52:43,676 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 08:52:43,678 [INFO] [generated in 0.00149s] ()
+2025-11-07 08:52:43,680 [INFO] Read all products.
+2025-11-07 08:52:43,681 [INFO] ROLLBACK
+2025-11-07 08:52:43,682 [INFO] 127.0.0.1 - - [07/Nov/2025 08:52:43] "GET /products HTTP/1.1" 200 -
+2025-11-07 08:56:59,572 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_batch_calc.py', reloading
+2025-11-07 08:56:59,704 [INFO]  * Restarting with stat
+2025-11-07 08:57:00,549 [INFO] BEGIN (implicit)
+2025-11-07 08:57:00,550 [INFO] PRAGMA main.table_info("products")
+2025-11-07 08:57:00,550 [INFO] [raw sql] ()
+2025-11-07 08:57:00,552 [INFO] COMMIT
+2025-11-07 08:57:00,574 [WARNING]  * Debugger is active!
+2025-11-07 08:57:00,576 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 08:58:24,664 [INFO] BEGIN (implicit)
+2025-11-07 08:58:24,669 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 08:58:24,670 [INFO] [generated in 0.00147s] ()
+2025-11-07 08:58:24,672 [INFO] Read all products.
+2025-11-07 08:58:24,674 [INFO] ROLLBACK
+2025-11-07 08:58:24,675 [INFO] 127.0.0.1 - - [07/Nov/2025 08:58:24] "GET /products HTTP/1.1" 200 -
+2025-11-07 08:59:04,945 [INFO] 127.0.0.1 - - [07/Nov/2025 08:59:04] "[31m[1mPUT /products HTTP/1.1[0m" 405 -
+2025-11-07 08:59:11,188 [INFO] BEGIN (implicit)
+2025-11-07 08:59:11,191 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:59:11,192 [INFO] [generated in 0.00099s] (5, 1, 0)
+2025-11-07 08:59:11,193 [INFO] Read product for given id.
+2025-11-07 08:59:11,194 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:59:11,195 [INFO] [cached since 0.003928s ago] (5, 1, 0)
+2025-11-07 08:59:11,196 [INFO] Read product for given id.
+2025-11-07 08:59:11,198 [INFO] UPDATE products SET quantity=? WHERE products.id = ?
+2025-11-07 08:59:11,199 [INFO] [generated in 0.00121s] (35, 5)
+2025-11-07 08:59:11,212 [INFO] COMMIT
+2025-11-07 08:59:11,224 [INFO] Product Updated Successfully
+2025-11-07 08:59:11,226 [INFO] BEGIN (implicit)
+2025-11-07 08:59:11,228 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 08:59:11,231 [INFO] [cached since 0.04024s ago] (5, 1, 0)
+2025-11-07 08:59:11,232 [INFO] Read product for given id.
+2025-11-07 08:59:11,233 [INFO] ROLLBACK
+2025-11-07 08:59:11,233 [INFO] 127.0.0.1 - - [07/Nov/2025 08:59:11] "PUT /products/5 HTTP/1.1" 200 -
+2025-11-07 08:59:19,940 [INFO] BEGIN (implicit)
+2025-11-07 08:59:19,941 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 08:59:19,943 [INFO] [cached since 55.27s ago] ()
+2025-11-07 08:59:19,945 [INFO] Read all products.
+2025-11-07 08:59:19,946 [INFO] ROLLBACK
+2025-11-07 08:59:19,947 [INFO] 127.0.0.1 - - [07/Nov/2025 08:59:19] "GET /products HTTP/1.1" 200 -
+2025-11-07 09:01:36,030 [INFO] BEGIN (implicit)
+2025-11-07 09:01:36,038 [INFO] INSERT INTO products (name, quantity, price) VALUES (?, ?, ?)
+2025-11-07 09:01:36,048 [INFO] [generated in 0.01097s] ('Laptop', 5, 90000.0)
+2025-11-07 09:01:36,065 [INFO] COMMIT
+2025-11-07 09:01:36,080 [INFO] Product Added Successfully
+2025-11-07 09:01:36,083 [INFO] BEGIN (implicit)
+2025-11-07 09:01:36,086 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+2025-11-07 09:01:36,088 [INFO] [generated in 0.00150s] (6,)
+2025-11-07 09:01:36,090 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 09:01:36,092 [INFO] [cached since 144.9s ago] (6, 1, 0)
+2025-11-07 09:01:36,095 [INFO] Read product for given id.
+2025-11-07 09:01:39,639 [INFO] ROLLBACK
+2025-11-07 09:01:39,641 [INFO] 127.0.0.1 - - [07/Nov/2025 09:01:39] "[35m[1mPOST /products HTTP/1.1[0m" 201 -
+2025-11-07 09:01:39,651 [INFO] BEGIN (implicit)
+2025-11-07 09:01:39,653 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 09:01:39,654 [INFO] [cached since 148.5s ago] (6, 1, 0)
+2025-11-07 09:01:39,657 [INFO] Read product for given id.
+2025-11-07 09:01:39,658 [INFO] ROLLBACK
+2025-11-07 09:01:39,659 [INFO] 127.0.0.1 - - [07/Nov/2025 09:01:39] "GET /products/6 HTTP/1.1" 200 -
+2025-11-07 09:02:04,122 [INFO] BEGIN (implicit)
+2025-11-07 09:02:04,124 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 09:02:04,126 [INFO] [cached since 219.5s ago] ()
+2025-11-07 09:02:04,128 [INFO] Read all products.
+2025-11-07 09:02:04,129 [INFO] ROLLBACK
+2025-11-07 09:02:04,131 [INFO] 127.0.0.1 - - [07/Nov/2025 09:02:04] "GET /products HTTP/1.1" 200 -
+2025-11-07 09:02:04,139 [INFO] BEGIN (implicit)
+2025-11-07 09:02:04,144 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 09:02:04,146 [INFO] [cached since 219.5s ago] ()
+2025-11-07 09:02:04,147 [INFO] Read all products.
+2025-11-07 09:02:04,148 [INFO] ROLLBACK
+2025-11-07 09:02:04,151 [INFO] 127.0.0.1 - - [07/Nov/2025 09:02:04] "GET /products HTTP/1.1" 200 -
+2025-11-07 09:02:04,160 [INFO] BEGIN (implicit)
+2025-11-07 09:02:04,163 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 09:02:04,164 [INFO] [cached since 219.5s ago] ()
+2025-11-07 09:02:04,166 [INFO] Read all products.
+2025-11-07 09:02:04,168 [INFO] ROLLBACK
+2025-11-07 09:02:04,169 [INFO] 127.0.0.1 - - [07/Nov/2025 09:02:04] "GET /products HTTP/1.1" 200 -
+2025-11-07 09:02:04,175 [INFO] BEGIN (implicit)
+2025-11-07 09:02:04,177 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 09:02:04,178 [INFO] [cached since 219.5s ago] ()
+2025-11-07 09:02:04,180 [INFO] Read all products.
+2025-11-07 09:02:04,181 [INFO] ROLLBACK
+2025-11-07 09:02:04,182 [INFO] 127.0.0.1 - - [07/Nov/2025 09:02:04] "GET /products HTTP/1.1" 200 -
+2025-11-07 09:02:04,189 [INFO] BEGIN (implicit)
+2025-11-07 09:02:04,191 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 09:02:04,192 [INFO] [cached since 219.5s ago] ()
+2025-11-07 09:02:04,194 [INFO] Read all products.
+2025-11-07 09:02:04,195 [INFO] ROLLBACK
+2025-11-07 09:02:04,196 [INFO] 127.0.0.1 - - [07/Nov/2025 09:02:04] "GET /products HTTP/1.1" 200 -
+2025-11-07 09:02:04,203 [INFO] BEGIN (implicit)
+2025-11-07 09:02:04,204 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 09:02:04,204 [INFO] [cached since 219.5s ago] ()
+2025-11-07 09:02:04,206 [INFO] Read all products.
+2025-11-07 09:02:04,207 [INFO] ROLLBACK
+2025-11-07 09:02:04,208 [INFO] 127.0.0.1 - - [07/Nov/2025 09:02:04] "GET /products HTTP/1.1" 200 -
+2025-11-07 09:02:04,216 [INFO] BEGIN (implicit)
+2025-11-07 09:02:04,216 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 09:02:04,219 [INFO] [cached since 219.5s ago] ()
+2025-11-07 09:02:04,220 [INFO] Read all products.
+2025-11-07 09:02:04,221 [INFO] ROLLBACK
+2025-11-07 09:02:04,223 [INFO] 127.0.0.1 - - [07/Nov/2025 09:02:04] "GET /products HTTP/1.1" 200 -
+2025-11-07 09:02:04,230 [INFO] BEGIN (implicit)
+2025-11-07 09:02:04,231 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 09:02:04,232 [INFO] [cached since 219.6s ago] ()
+2025-11-07 09:02:04,234 [INFO] Read all products.
+2025-11-07 09:02:04,235 [INFO] ROLLBACK
+2025-11-07 09:02:04,237 [INFO] 127.0.0.1 - - [07/Nov/2025 09:02:04] "GET /products HTTP/1.1" 200 -
+2025-11-07 09:10:35,017 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_crud.py', reloading
+2025-11-07 09:10:35,102 [INFO]  * Restarting with stat
+2025-11-07 09:10:35,894 [INFO] BEGIN (implicit)
+2025-11-07 09:10:35,895 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:10:35,895 [INFO] [raw sql] ()
+2025-11-07 09:10:35,896 [INFO] COMMIT
+2025-11-07 09:10:35,910 [WARNING]  * Debugger is active!
+2025-11-07 09:10:35,911 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:10:37,931 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_crud.py', reloading
+2025-11-07 09:10:38,020 [INFO]  * Restarting with stat
+2025-11-07 09:10:38,925 [INFO] BEGIN (implicit)
+2025-11-07 09:10:38,926 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:10:38,926 [INFO] [raw sql] ()
+2025-11-07 09:10:38,928 [INFO] COMMIT
+2025-11-07 09:10:38,949 [WARNING]  * Debugger is active!
+2025-11-07 09:10:38,951 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:10:40,987 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_crud.py', reloading
+2025-11-07 09:10:41,102 [INFO]  * Restarting with stat
+2025-11-07 09:10:42,082 [INFO] BEGIN (implicit)
+2025-11-07 09:10:42,083 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:10:42,083 [INFO] [raw sql] ()
+2025-11-07 09:10:42,084 [INFO] COMMIT
+2025-11-07 09:10:42,105 [WARNING]  * Debugger is active!
+2025-11-07 09:10:42,107 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:14:17,527 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:14:17,622 [INFO]  * Restarting with stat
+2025-11-07 09:14:18,431 [INFO] BEGIN (implicit)
+2025-11-07 09:14:18,431 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:14:18,432 [INFO] [raw sql] ()
+2025-11-07 09:14:18,433 [INFO] COMMIT
+2025-11-07 09:14:18,450 [WARNING]  * Debugger is active!
+2025-11-07 09:14:18,452 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:14:28,511 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:14:28,598 [INFO]  * Restarting with stat
+2025-11-07 09:14:29,478 [INFO] BEGIN (implicit)
+2025-11-07 09:14:29,479 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:14:29,479 [INFO] [raw sql] ()
+2025-11-07 09:14:29,480 [INFO] COMMIT
+2025-11-07 09:14:29,499 [WARNING]  * Debugger is active!
+2025-11-07 09:14:29,500 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:14:32,522 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:14:32,598 [INFO]  * Restarting with stat
+2025-11-07 09:14:33,505 [INFO] BEGIN (implicit)
+2025-11-07 09:14:33,506 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:14:33,507 [INFO] [raw sql] ()
+2025-11-07 09:14:33,510 [INFO] COMMIT
+2025-11-07 09:14:33,531 [WARNING]  * Debugger is active!
+2025-11-07 09:14:33,532 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:14:57,692 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:14:57,772 [INFO]  * Restarting with stat
+2025-11-07 09:14:58,607 [INFO] BEGIN (implicit)
+2025-11-07 09:14:58,608 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:14:58,609 [INFO] [raw sql] ()
+2025-11-07 09:14:58,610 [INFO] COMMIT
+2025-11-07 09:14:58,632 [WARNING]  * Debugger is active!
+2025-11-07 09:14:58,634 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:15:44,922 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:15:45,001 [INFO]  * Restarting with stat
+2025-11-07 09:15:45,881 [INFO] BEGIN (implicit)
+2025-11-07 09:15:45,882 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:15:45,883 [INFO] [raw sql] ()
+2025-11-07 09:15:45,884 [INFO] COMMIT
+2025-11-07 09:15:45,907 [WARNING]  * Debugger is active!
+2025-11-07 09:15:45,909 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:15:47,931 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:15:48,076 [INFO]  * Restarting with stat
+2025-11-07 09:15:48,916 [INFO] BEGIN (implicit)
+2025-11-07 09:15:48,916 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:15:48,917 [INFO] [raw sql] ()
+2025-11-07 09:15:48,917 [INFO] COMMIT
+2025-11-07 09:15:48,936 [WARNING]  * Debugger is active!
+2025-11-07 09:15:48,937 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:15:50,956 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:15:51,057 [INFO]  * Restarting with stat
+2025-11-07 09:15:51,912 [INFO] BEGIN (implicit)
+2025-11-07 09:15:51,914 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:15:51,915 [INFO] [raw sql] ()
+2025-11-07 09:15:51,916 [INFO] COMMIT
+2025-11-07 09:15:51,936 [WARNING]  * Debugger is active!
+2025-11-07 09:15:51,938 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:15:55,965 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:15:56,075 [INFO]  * Restarting with stat
+2025-11-07 09:15:56,892 [INFO] BEGIN (implicit)
+2025-11-07 09:15:56,894 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:15:56,894 [INFO] [raw sql] ()
+2025-11-07 09:15:56,895 [INFO] COMMIT
+2025-11-07 09:15:56,916 [WARNING]  * Debugger is active!
+2025-11-07 09:15:56,917 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:15:59,943 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:16:00,049 [INFO]  * Restarting with stat
+2025-11-07 09:16:00,901 [INFO] BEGIN (implicit)
+2025-11-07 09:16:00,902 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:16:00,902 [INFO] [raw sql] ()
+2025-11-07 09:16:00,904 [INFO] COMMIT
+2025-11-07 09:16:00,929 [WARNING]  * Debugger is active!
+2025-11-07 09:16:00,932 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:17:33,514 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:17:33,695 [INFO]  * Restarting with stat
+2025-11-07 09:17:34,467 [INFO] BEGIN (implicit)
+2025-11-07 09:17:34,468 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:17:34,469 [INFO] [raw sql] ()
+2025-11-07 09:17:34,470 [INFO] COMMIT
+2025-11-07 09:17:34,494 [WARNING]  * Debugger is active!
+2025-11-07 09:17:34,496 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:17:40,537 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:17:40,627 [INFO]  * Restarting with stat
+2025-11-07 09:17:41,494 [INFO] BEGIN (implicit)
+2025-11-07 09:17:41,495 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:17:41,495 [INFO] [raw sql] ()
+2025-11-07 09:17:41,496 [INFO] COMMIT
+2025-11-07 09:17:41,515 [WARNING]  * Debugger is active!
+2025-11-07 09:17:41,516 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:17:42,532 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:17:42,611 [INFO]  * Restarting with stat
+2025-11-07 09:17:43,389 [INFO] BEGIN (implicit)
+2025-11-07 09:17:43,389 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:17:43,389 [INFO] [raw sql] ()
+2025-11-07 09:17:43,391 [INFO] COMMIT
+2025-11-07 09:17:43,414 [WARNING]  * Debugger is active!
+2025-11-07 09:17:43,416 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:17:47,451 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:17:47,532 [INFO]  * Restarting with stat
+2025-11-07 09:17:48,327 [INFO] BEGIN (implicit)
+2025-11-07 09:17:48,327 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:17:48,328 [INFO] [raw sql] ()
+2025-11-07 09:17:48,329 [INFO] COMMIT
+2025-11-07 09:17:48,346 [WARNING]  * Debugger is active!
+2025-11-07 09:17:48,348 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:17:53,391 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:17:53,480 [INFO]  * Restarting with stat
+2025-11-07 09:17:54,339 [INFO] BEGIN (implicit)
+2025-11-07 09:17:54,340 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:17:54,341 [INFO] [raw sql] ()
+2025-11-07 09:17:54,342 [INFO] COMMIT
+2025-11-07 09:17:54,368 [WARNING]  * Debugger is active!
+2025-11-07 09:17:54,372 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:18:00,431 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:18:00,508 [INFO]  * Restarting with stat
+2025-11-07 09:18:01,326 [INFO] BEGIN (implicit)
+2025-11-07 09:18:01,326 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:18:01,327 [INFO] [raw sql] ()
+2025-11-07 09:18:01,328 [INFO] COMMIT
+2025-11-07 09:18:01,350 [WARNING]  * Debugger is active!
+2025-11-07 09:18:01,353 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:18:04,388 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:18:04,471 [INFO]  * Restarting with stat
+2025-11-07 09:18:05,325 [INFO] BEGIN (implicit)
+2025-11-07 09:18:05,326 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:18:05,327 [INFO] [raw sql] ()
+2025-11-07 09:18:05,328 [INFO] COMMIT
+2025-11-07 09:18:05,345 [WARNING]  * Debugger is active!
+2025-11-07 09:18:05,347 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:18:07,372 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:18:07,449 [INFO]  * Restarting with stat
+2025-11-07 09:18:08,266 [INFO] BEGIN (implicit)
+2025-11-07 09:18:08,267 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:18:08,267 [INFO] [raw sql] ()
+2025-11-07 09:18:08,268 [INFO] COMMIT
+2025-11-07 09:18:08,290 [WARNING]  * Debugger is active!
+2025-11-07 09:18:08,292 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:18:09,309 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:18:09,399 [INFO]  * Restarting with stat
+2025-11-07 09:18:10,358 [INFO] BEGIN (implicit)
+2025-11-07 09:18:10,359 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:18:10,359 [INFO] [raw sql] ()
+2025-11-07 09:18:10,361 [INFO] COMMIT
+2025-11-07 09:18:10,379 [WARNING]  * Debugger is active!
+2025-11-07 09:18:10,381 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:18:17,423 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:18:17,506 [INFO]  * Restarting with stat
+2025-11-07 09:18:18,429 [INFO] BEGIN (implicit)
+2025-11-07 09:18:18,430 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:18:18,430 [INFO] [raw sql] ()
+2025-11-07 09:18:18,432 [INFO] COMMIT
+2025-11-07 09:18:18,456 [WARNING]  * Debugger is active!
+2025-11-07 09:18:18,461 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:18:26,511 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:18:26,597 [INFO]  * Restarting with stat
+2025-11-07 09:18:27,477 [INFO] BEGIN (implicit)
+2025-11-07 09:18:27,478 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:18:27,478 [INFO] [raw sql] ()
+2025-11-07 09:18:27,479 [INFO] COMMIT
+2025-11-07 09:18:27,498 [WARNING]  * Debugger is active!
+2025-11-07 09:18:27,499 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:18:31,529 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:18:31,618 [INFO]  * Restarting with stat
+2025-11-07 09:18:32,504 [INFO] BEGIN (implicit)
+2025-11-07 09:18:32,505 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:18:32,505 [INFO] [raw sql] ()
+2025-11-07 09:18:32,506 [INFO] COMMIT
+2025-11-07 09:18:32,530 [WARNING]  * Debugger is active!
+2025-11-07 09:18:32,532 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:18:34,562 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:18:34,636 [INFO]  * Restarting with stat
+2025-11-07 09:18:35,430 [INFO] BEGIN (implicit)
+2025-11-07 09:18:35,431 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:18:35,432 [INFO] [raw sql] ()
+2025-11-07 09:18:35,432 [INFO] COMMIT
+2025-11-07 09:18:35,451 [WARNING]  * Debugger is active!
+2025-11-07 09:18:35,453 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:18:39,490 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:18:39,568 [INFO]  * Restarting with stat
+2025-11-07 09:18:40,502 [INFO] BEGIN (implicit)
+2025-11-07 09:18:40,502 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:18:40,503 [INFO] [raw sql] ()
+2025-11-07 09:18:40,503 [INFO] COMMIT
+2025-11-07 09:18:40,526 [WARNING]  * Debugger is active!
+2025-11-07 09:18:40,530 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:18:46,578 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:18:46,669 [INFO]  * Restarting with stat
+2025-11-07 09:18:47,525 [INFO] BEGIN (implicit)
+2025-11-07 09:18:47,526 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:18:47,527 [INFO] [raw sql] ()
+2025-11-07 09:18:47,528 [INFO] COMMIT
+2025-11-07 09:18:47,551 [WARNING]  * Debugger is active!
+2025-11-07 09:18:47,552 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:20:39,291 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:20:39,401 [INFO]  * Restarting with stat
+2025-11-07 09:20:40,337 [INFO] BEGIN (implicit)
+2025-11-07 09:20:40,338 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:20:40,339 [INFO] [raw sql] ()
+2025-11-07 09:20:40,341 [INFO] COMMIT
+2025-11-07 09:20:40,373 [WARNING]  * Debugger is active!
+2025-11-07 09:20:40,375 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:20:43,423 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:20:43,517 [INFO]  * Restarting with stat
+2025-11-07 09:20:44,650 [INFO] BEGIN (implicit)
+2025-11-07 09:20:44,650 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:20:44,651 [INFO] [raw sql] ()
+2025-11-07 09:20:44,652 [INFO] COMMIT
+2025-11-07 09:20:44,680 [WARNING]  * Debugger is active!
+2025-11-07 09:20:44,683 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:20:46,709 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\batch_calc.py', reloading
+2025-11-07 09:20:46,811 [INFO]  * Restarting with stat
+2025-11-07 09:20:47,671 [INFO] BEGIN (implicit)
+2025-11-07 09:20:47,673 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:20:47,674 [INFO] [raw sql] ()
+2025-11-07 09:20:47,675 [INFO] COMMIT
+2025-11-07 09:20:47,707 [WARNING]  * Debugger is active!
+2025-11-07 09:20:47,710 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:21:46,076 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 09:21:46,200 [INFO]  * Restarting with stat
+2025-11-07 09:21:46,936 [INFO] BEGIN (implicit)
+2025-11-07 09:21:46,937 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:21:46,938 [INFO] [raw sql] ()
+2025-11-07 09:21:46,939 [INFO] COMMIT
+2025-11-07 09:21:46,969 [WARNING]  * Debugger is active!
+2025-11-07 09:21:46,971 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:24:38,057 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 09:24:38,141 [INFO]  * Restarting with stat
+2025-11-07 09:24:38,980 [INFO] BEGIN (implicit)
+2025-11-07 09:24:38,982 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:24:38,982 [INFO] [raw sql] ()
+2025-11-07 09:24:38,984 [INFO] COMMIT
+2025-11-07 09:24:39,011 [WARNING]  * Debugger is active!
+2025-11-07 09:24:39,013 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:24:40,036 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 09:24:40,131 [INFO]  * Restarting with stat
+2025-11-07 09:24:40,991 [INFO] BEGIN (implicit)
+2025-11-07 09:24:40,992 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:24:40,992 [INFO] [raw sql] ()
+2025-11-07 09:24:40,993 [INFO] COMMIT
+2025-11-07 09:24:41,010 [WARNING]  * Debugger is active!
+2025-11-07 09:24:41,011 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:25:57,496 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 09:25:57,667 [INFO]  * Restarting with stat
+2025-11-07 09:25:58,425 [INFO] BEGIN (implicit)
+2025-11-07 09:25:58,426 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:25:58,427 [INFO] [raw sql] ()
+2025-11-07 09:25:58,428 [INFO] COMMIT
+2025-11-07 09:25:58,443 [WARNING]  * Debugger is active!
+2025-11-07 09:25:58,445 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:26:01,468 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 09:26:01,559 [INFO]  * Restarting with stat
+2025-11-07 09:26:02,332 [INFO] BEGIN (implicit)
+2025-11-07 09:26:02,333 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:26:02,333 [INFO] [raw sql] ()
+2025-11-07 09:26:02,334 [INFO] COMMIT
+2025-11-07 09:26:02,358 [WARNING]  * Debugger is active!
+2025-11-07 09:26:02,361 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:26:08,404 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 09:26:08,488 [INFO]  * Restarting with stat
+2025-11-07 09:26:09,510 [INFO] BEGIN (implicit)
+2025-11-07 09:26:09,511 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:26:09,512 [INFO] [raw sql] ()
+2025-11-07 09:26:09,513 [INFO] COMMIT
+2025-11-07 09:26:09,538 [WARNING]  * Debugger is active!
+2025-11-07 09:26:09,540 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:26:53,855 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 09:26:53,947 [INFO]  * Restarting with stat
+2025-11-07 09:26:54,782 [INFO] BEGIN (implicit)
+2025-11-07 09:26:54,783 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:26:54,783 [INFO] [raw sql] ()
+2025-11-07 09:26:54,784 [INFO] COMMIT
+2025-11-07 09:26:54,803 [WARNING]  * Debugger is active!
+2025-11-07 09:26:54,804 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:27:47,171 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 09:27:47,249 [INFO]  * Restarting with stat
+2025-11-07 09:58:36,660 [INFO] BEGIN (implicit)
+2025-11-07 09:58:36,661 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:58:36,661 [INFO] [raw sql] ()
+2025-11-07 09:58:36,663 [INFO] COMMIT
+2025-11-07 09:58:36,702 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-07 09:58:36,702 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-07 09:58:36,705 [INFO]  * Restarting with stat
+2025-11-07 09:58:37,584 [INFO] BEGIN (implicit)
+2025-11-07 09:58:37,585 [INFO] PRAGMA main.table_info("products")
+2025-11-07 09:58:37,586 [INFO] [raw sql] ()
+2025-11-07 09:58:37,587 [INFO] COMMIT
+2025-11-07 09:58:37,608 [WARNING]  * Debugger is active!
+2025-11-07 09:58:37,611 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 09:58:45,208 [INFO] BEGIN (implicit)
+2025-11-07 09:58:45,212 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 09:58:45,212 [INFO] [generated in 0.00095s] ()
+2025-11-07 09:58:45,214 [INFO] Read all products.
+2025-11-07 09:58:45,215 [INFO] ROLLBACK
+2025-11-07 09:58:45,216 [INFO] 127.0.0.1 - - [07/Nov/2025 09:58:45] "GET /products HTTP/1.1" 200 -
+2025-11-07 09:59:23,115 [INFO] BEGIN (implicit)
+2025-11-07 09:59:23,117 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 09:59:23,119 [INFO] [generated in 0.00152s] (6, 1, 0)
+2025-11-07 09:59:23,120 [INFO] Read product for given id.
+2025-11-07 09:59:23,121 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 09:59:23,121 [INFO] [cached since 0.004345s ago] (6, 1, 0)
+2025-11-07 09:59:23,122 [INFO] Read product for given id.
+2025-11-07 09:59:23,124 [INFO] DELETE FROM products WHERE products.id = ?
+2025-11-07 09:59:23,125 [INFO] [generated in 0.00051s] (6,)
+2025-11-07 09:59:23,138 [INFO] COMMIT
+2025-11-07 09:59:23,149 [INFO] Product Deleted Successfully
+2025-11-07 09:59:23,150 [INFO] 127.0.0.1 - - [07/Nov/2025 09:59:23] "DELETE /products/6 HTTP/1.1" 200 -
+2025-11-07 09:59:28,633 [INFO] BEGIN (implicit)
+2025-11-07 09:59:28,635 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 09:59:28,636 [INFO] [cached since 5.52s ago] (6, 1, 0)
+2025-11-07 09:59:28,639 [INFO] Read product for given id.
+2025-11-07 09:59:28,640 [INFO] ROLLBACK
+2025-11-07 09:59:28,641 [INFO] 127.0.0.1 - - [07/Nov/2025 09:59:28] "[33mGET /products/6 HTTP/1.1[0m" 404 -
+2025-11-07 09:59:30,347 [INFO] BEGIN (implicit)
+2025-11-07 09:59:30,349 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 09:59:30,351 [INFO] [cached since 7.233s ago] (6, 1, 0)
+2025-11-07 09:59:30,352 [INFO] Read product for given id.
+2025-11-07 09:59:30,353 [INFO] ROLLBACK
+2025-11-07 09:59:30,353 [INFO] 127.0.0.1 - - [07/Nov/2025 09:59:30] "[33mGET /products/6 HTTP/1.1[0m" 404 -
+2025-11-07 09:59:34,890 [INFO] BEGIN (implicit)
+2025-11-07 09:59:34,893 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 09:59:34,895 [INFO] [cached since 49.68s ago] ()
+2025-11-07 09:59:34,898 [INFO] Read all products.
+2025-11-07 09:59:34,902 [INFO] ROLLBACK
+2025-11-07 09:59:34,907 [INFO] 127.0.0.1 - - [07/Nov/2025 09:59:34] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:00:40,203 [INFO] BEGIN (implicit)
+2025-11-07 10:00:40,207 [INFO] INSERT INTO products (name, quantity, price) VALUES (?, ?, ?)
+2025-11-07 10:00:40,208 [INFO] [generated in 0.00153s] ('Electric Wheel chair', '2', 45000.0)
+2025-11-07 10:00:40,227 [INFO] COMMIT
+2025-11-07 10:00:40,251 [INFO] Product Added Successfully
+2025-11-07 10:00:40,258 [INFO] BEGIN (implicit)
+2025-11-07 10:00:40,263 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+2025-11-07 10:00:40,267 [INFO] [generated in 0.00378s] (6,)
+2025-11-07 10:00:40,273 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:00:40,275 [INFO] [cached since 77.16s ago] (6, 1, 0)
+2025-11-07 10:00:40,278 [INFO] Read product for given id.
+2025-11-07 10:00:43,668 [INFO] ROLLBACK
+2025-11-07 10:00:43,671 [INFO] 127.0.0.1 - - [07/Nov/2025 10:00:43] "[35m[1mPOST /products HTTP/1.1[0m" 201 -
+2025-11-07 10:01:00,070 [INFO] BEGIN (implicit)
+2025-11-07 10:01:00,073 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:01:00,074 [INFO] [cached since 96.96s ago] (6, 1, 0)
+2025-11-07 10:01:00,077 [INFO] Read product for given id.
+2025-11-07 10:01:00,078 [INFO] ROLLBACK
+2025-11-07 10:01:00,079 [INFO] 127.0.0.1 - - [07/Nov/2025 10:01:00] "GET /products/6 HTTP/1.1" 200 -
+2025-11-07 10:01:09,777 [INFO] BEGIN (implicit)
+2025-11-07 10:01:09,779 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:01:09,781 [INFO] [cached since 144.6s ago] ()
+2025-11-07 10:01:09,785 [INFO] Read all products.
+2025-11-07 10:01:09,786 [INFO] ROLLBACK
+2025-11-07 10:01:09,788 [INFO] 127.0.0.1 - - [07/Nov/2025 10:01:09] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:01:18,499 [INFO] BEGIN (implicit)
+2025-11-07 10:01:18,502 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:01:18,503 [INFO] [cached since 115.4s ago] (6, 1, 0)
+2025-11-07 10:01:18,505 [INFO] Read product for given id.
+2025-11-07 10:01:18,507 [INFO] ROLLBACK
+2025-11-07 10:01:18,510 [INFO] 127.0.0.1 - - [07/Nov/2025 10:01:18] "GET /products/6 HTTP/1.1" 200 -
+2025-11-07 10:01:28,244 [INFO] BEGIN (implicit)
+2025-11-07 10:01:28,247 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:01:28,249 [INFO] [cached since 125.1s ago] (6, 1, 0)
+2025-11-07 10:01:28,251 [INFO] Read product for given id.
+2025-11-07 10:01:28,253 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:01:28,254 [INFO] [cached since 125.1s ago] (6, 1, 0)
+2025-11-07 10:01:28,256 [INFO] Read product for given id.
+2025-11-07 10:01:28,260 [INFO] UPDATE products SET quantity=?, price=? WHERE products.id = ?
+2025-11-07 10:01:28,264 [INFO] [generated in 0.00326s] ('3', 46000.0, 6)
+2025-11-07 10:01:28,272 [INFO] COMMIT
+2025-11-07 10:01:28,291 [INFO] Product Updated Successfully
+2025-11-07 10:01:28,295 [INFO] BEGIN (implicit)
+2025-11-07 10:01:28,300 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:01:28,304 [INFO] [cached since 125.2s ago] (6, 1, 0)
+2025-11-07 10:01:28,307 [INFO] Read product for given id.
+2025-11-07 10:01:28,310 [INFO] ROLLBACK
+2025-11-07 10:01:28,314 [INFO] 127.0.0.1 - - [07/Nov/2025 10:01:28] "PUT /products/6 HTTP/1.1" 200 -
+2025-11-07 10:01:33,606 [INFO] BEGIN (implicit)
+2025-11-07 10:01:33,608 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:01:33,610 [INFO] [cached since 168.4s ago] ()
+2025-11-07 10:01:33,612 [INFO] Read all products.
+2025-11-07 10:01:33,613 [INFO] ROLLBACK
+2025-11-07 10:01:33,615 [INFO] 127.0.0.1 - - [07/Nov/2025 10:01:33] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:01:53,699 [INFO] BEGIN (implicit)
+2025-11-07 10:01:53,703 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:01:53,706 [INFO] [cached since 188.5s ago] ()
+2025-11-07 10:01:53,710 [INFO] Read all products.
+2025-11-07 10:01:53,713 [INFO] ROLLBACK
+2025-11-07 10:01:53,715 [INFO] 127.0.0.1 - - [07/Nov/2025 10:01:53] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:01:57,832 [INFO] BEGIN (implicit)
+2025-11-07 10:01:57,835 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:01:57,836 [INFO] [cached since 192.6s ago] ()
+2025-11-07 10:01:57,839 [INFO] Read all products.
+2025-11-07 10:01:57,839 [INFO] ROLLBACK
+2025-11-07 10:01:57,840 [INFO] 127.0.0.1 - - [07/Nov/2025 10:01:57] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:02:02,385 [INFO] BEGIN (implicit)
+2025-11-07 10:02:02,386 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:02:02,387 [INFO] [cached since 197.2s ago] ()
+2025-11-07 10:02:02,388 [INFO] Read all products.
+2025-11-07 10:02:02,389 [INFO] ROLLBACK
+2025-11-07 10:02:02,390 [INFO] 127.0.0.1 - - [07/Nov/2025 10:02:02] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:02:09,040 [INFO] BEGIN (implicit)
+2025-11-07 10:02:09,042 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:02:09,043 [INFO] [cached since 203.8s ago] ()
+2025-11-07 10:02:09,045 [INFO] Read all products.
+2025-11-07 10:02:09,047 [INFO] ROLLBACK
+2025-11-07 10:02:09,048 [INFO] 127.0.0.1 - - [07/Nov/2025 10:02:09] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:02:25,598 [INFO] BEGIN (implicit)
+2025-11-07 10:02:25,600 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:02:25,601 [INFO] [cached since 182.5s ago] (6, 1, 0)
+2025-11-07 10:02:25,603 [INFO] Read product for given id.
+2025-11-07 10:02:25,604 [INFO] ROLLBACK
+2025-11-07 10:02:25,605 [INFO] 127.0.0.1 - - [07/Nov/2025 10:02:25] "GET /products/6 HTTP/1.1" 200 -
+2025-11-07 10:02:33,087 [INFO] BEGIN (implicit)
+2025-11-07 10:02:33,089 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:02:33,091 [INFO] [cached since 227.9s ago] ()
+2025-11-07 10:02:33,093 [INFO] Read all products.
+2025-11-07 10:02:33,095 [INFO] ROLLBACK
+2025-11-07 10:02:33,096 [INFO] 127.0.0.1 - - [07/Nov/2025 10:02:33] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:04:31,886 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\client\\cli.py', reloading
+2025-11-07 10:04:32,002 [INFO]  * Restarting with stat
+2025-11-07 10:04:32,914 [INFO] BEGIN (implicit)
+2025-11-07 10:04:32,914 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:04:32,914 [INFO] [raw sql] ()
+2025-11-07 10:04:32,916 [INFO] COMMIT
+2025-11-07 10:04:32,944 [WARNING]  * Debugger is active!
+2025-11-07 10:04:32,947 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:05:24,236 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:05:24,359 [INFO]  * Restarting with stat
+2025-11-07 10:05:25,209 [INFO] BEGIN (implicit)
+2025-11-07 10:05:25,209 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:05:25,210 [INFO] [raw sql] ()
+2025-11-07 10:05:25,210 [INFO] COMMIT
+2025-11-07 10:05:25,228 [WARNING]  * Debugger is active!
+2025-11-07 10:05:25,230 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:05:28,255 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:05:28,344 [INFO]  * Restarting with stat
+2025-11-07 10:05:29,175 [INFO] BEGIN (implicit)
+2025-11-07 10:05:29,175 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:05:29,176 [INFO] [raw sql] ()
+2025-11-07 10:05:29,177 [INFO] COMMIT
+2025-11-07 10:05:29,201 [WARNING]  * Debugger is active!
+2025-11-07 10:05:29,203 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:05:34,254 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:05:34,352 [INFO]  * Restarting with stat
+2025-11-07 10:05:35,138 [INFO] BEGIN (implicit)
+2025-11-07 10:05:35,139 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:05:35,140 [INFO] [raw sql] ()
+2025-11-07 10:05:35,140 [INFO] COMMIT
+2025-11-07 10:05:35,160 [WARNING]  * Debugger is active!
+2025-11-07 10:05:35,163 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:05:40,213 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:05:40,336 [INFO]  * Restarting with stat
+2025-11-07 10:05:41,192 [INFO] BEGIN (implicit)
+2025-11-07 10:05:41,193 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:05:41,193 [INFO] [raw sql] ()
+2025-11-07 10:05:41,196 [INFO] COMMIT
+2025-11-07 10:05:41,217 [WARNING]  * Debugger is active!
+2025-11-07 10:05:41,219 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:05:47,266 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:05:47,367 [INFO]  * Restarting with stat
+2025-11-07 10:05:48,305 [INFO] BEGIN (implicit)
+2025-11-07 10:05:48,306 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:05:48,307 [INFO] [raw sql] ()
+2025-11-07 10:05:48,308 [INFO] COMMIT
+2025-11-07 10:05:48,329 [WARNING]  * Debugger is active!
+2025-11-07 10:05:48,331 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:05:57,393 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:05:57,498 [INFO]  * Restarting with stat
+2025-11-07 10:05:58,452 [INFO] BEGIN (implicit)
+2025-11-07 10:05:58,453 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:05:58,454 [INFO] [raw sql] ()
+2025-11-07 10:05:58,455 [INFO] COMMIT
+2025-11-07 10:05:58,476 [WARNING]  * Debugger is active!
+2025-11-07 10:05:58,478 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:06:03,506 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:06:03,595 [INFO]  * Restarting with stat
+2025-11-07 10:06:04,440 [INFO] BEGIN (implicit)
+2025-11-07 10:06:04,441 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:06:04,442 [INFO] [raw sql] ()
+2025-11-07 10:06:04,443 [INFO] COMMIT
+2025-11-07 10:06:04,458 [WARNING]  * Debugger is active!
+2025-11-07 10:06:04,460 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:06:06,493 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:06:06,623 [INFO]  * Restarting with stat
+2025-11-07 10:06:07,544 [INFO] BEGIN (implicit)
+2025-11-07 10:06:07,545 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:06:07,545 [INFO] [raw sql] ()
+2025-11-07 10:06:07,546 [INFO] COMMIT
+2025-11-07 10:06:07,567 [WARNING]  * Debugger is active!
+2025-11-07 10:06:07,569 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:06:09,591 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:06:09,682 [INFO]  * Restarting with stat
+2025-11-07 10:06:10,653 [INFO] BEGIN (implicit)
+2025-11-07 10:06:10,654 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:06:10,654 [INFO] [raw sql] ()
+2025-11-07 10:06:10,656 [INFO] COMMIT
+2025-11-07 10:06:10,683 [WARNING]  * Debugger is active!
+2025-11-07 10:06:10,685 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:06:13,710 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:06:13,799 [INFO]  * Restarting with stat
+2025-11-07 10:06:14,623 [INFO] BEGIN (implicit)
+2025-11-07 10:06:14,624 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:06:14,624 [INFO] [raw sql] ()
+2025-11-07 10:06:14,626 [INFO] COMMIT
+2025-11-07 10:06:14,645 [WARNING]  * Debugger is active!
+2025-11-07 10:06:14,646 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:06:17,687 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:06:17,769 [INFO]  * Restarting with stat
+2025-11-07 10:06:18,567 [INFO] BEGIN (implicit)
+2025-11-07 10:06:18,568 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:06:18,568 [INFO] [raw sql] ()
+2025-11-07 10:06:18,570 [INFO] COMMIT
+2025-11-07 10:06:18,586 [WARNING]  * Debugger is active!
+2025-11-07 10:06:18,588 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:06:21,614 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:06:21,739 [INFO]  * Restarting with stat
+2025-11-07 10:06:22,564 [INFO] BEGIN (implicit)
+2025-11-07 10:06:22,564 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:06:22,566 [INFO] [raw sql] ()
+2025-11-07 10:06:22,567 [INFO] COMMIT
+2025-11-07 10:06:22,587 [WARNING]  * Debugger is active!
+2025-11-07 10:06:22,589 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:06:29,628 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:06:29,760 [INFO]  * Restarting with stat
+2025-11-07 10:06:30,614 [INFO] BEGIN (implicit)
+2025-11-07 10:06:30,614 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:06:30,615 [INFO] [raw sql] ()
+2025-11-07 10:06:30,616 [INFO] COMMIT
+2025-11-07 10:06:30,654 [WARNING]  * Debugger is active!
+2025-11-07 10:06:30,656 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:06:31,678 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:06:31,798 [INFO]  * Restarting with stat
+2025-11-07 10:06:32,689 [INFO] BEGIN (implicit)
+2025-11-07 10:06:32,689 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:06:32,689 [INFO] [raw sql] ()
+2025-11-07 10:06:32,690 [INFO] COMMIT
+2025-11-07 10:06:32,710 [WARNING]  * Debugger is active!
+2025-11-07 10:06:32,712 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:07:40,148 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:07:40,254 [INFO]  * Restarting with stat
+2025-11-07 10:07:41,175 [INFO] BEGIN (implicit)
+2025-11-07 10:07:41,176 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:07:41,176 [INFO] [raw sql] ()
+2025-11-07 10:07:41,177 [INFO] COMMIT
+2025-11-07 10:07:41,198 [WARNING]  * Debugger is active!
+2025-11-07 10:07:41,201 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:07:44,225 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:07:44,353 [INFO]  * Restarting with stat
+2025-11-07 10:07:45,211 [INFO] BEGIN (implicit)
+2025-11-07 10:07:45,212 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:07:45,213 [INFO] [raw sql] ()
+2025-11-07 10:07:45,214 [INFO] COMMIT
+2025-11-07 10:07:45,236 [WARNING]  * Debugger is active!
+2025-11-07 10:07:45,238 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:07:48,264 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:07:48,362 [INFO]  * Restarting with stat
+2025-11-07 10:07:49,242 [INFO] BEGIN (implicit)
+2025-11-07 10:07:49,243 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:07:49,244 [INFO] [raw sql] ()
+2025-11-07 10:07:49,245 [INFO] COMMIT
+2025-11-07 10:07:49,264 [WARNING]  * Debugger is active!
+2025-11-07 10:07:49,267 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:07:50,292 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:07:50,401 [INFO]  * Restarting with stat
+2025-11-07 10:07:51,227 [INFO] BEGIN (implicit)
+2025-11-07 10:07:51,228 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:07:51,228 [INFO] [raw sql] ()
+2025-11-07 10:07:51,229 [INFO] COMMIT
+2025-11-07 10:07:51,244 [WARNING]  * Debugger is active!
+2025-11-07 10:07:51,246 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:07:53,270 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:07:53,423 [INFO]  * Restarting with stat
+2025-11-07 10:07:54,283 [INFO] BEGIN (implicit)
+2025-11-07 10:07:54,284 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:07:54,284 [INFO] [raw sql] ()
+2025-11-07 10:07:54,285 [INFO] COMMIT
+2025-11-07 10:07:54,310 [WARNING]  * Debugger is active!
+2025-11-07 10:07:54,313 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:07:57,340 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:07:57,432 [INFO]  * Restarting with stat
+2025-11-07 10:07:58,395 [INFO] BEGIN (implicit)
+2025-11-07 10:07:58,396 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:07:58,397 [INFO] [raw sql] ()
+2025-11-07 10:07:58,399 [INFO] COMMIT
+2025-11-07 10:07:58,418 [WARNING]  * Debugger is active!
+2025-11-07 10:07:58,420 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:00,450 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:00,532 [INFO]  * Restarting with stat
+2025-11-07 10:08:01,444 [INFO] BEGIN (implicit)
+2025-11-07 10:08:01,445 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:01,445 [INFO] [raw sql] ()
+2025-11-07 10:08:01,446 [INFO] COMMIT
+2025-11-07 10:08:01,469 [WARNING]  * Debugger is active!
+2025-11-07 10:08:01,472 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:08,525 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:08,627 [INFO]  * Restarting with stat
+2025-11-07 10:08:09,551 [INFO] BEGIN (implicit)
+2025-11-07 10:08:09,552 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:09,553 [INFO] [raw sql] ()
+2025-11-07 10:08:09,554 [INFO] COMMIT
+2025-11-07 10:08:09,574 [WARNING]  * Debugger is active!
+2025-11-07 10:08:09,577 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:13,608 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:13,712 [INFO]  * Restarting with stat
+2025-11-07 10:08:14,716 [INFO] BEGIN (implicit)
+2025-11-07 10:08:14,717 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:14,717 [INFO] [raw sql] ()
+2025-11-07 10:08:14,718 [INFO] COMMIT
+2025-11-07 10:08:14,740 [WARNING]  * Debugger is active!
+2025-11-07 10:08:14,743 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:16,764 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:16,860 [INFO]  * Restarting with stat
+2025-11-07 10:08:17,741 [INFO] BEGIN (implicit)
+2025-11-07 10:08:17,742 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:17,742 [INFO] [raw sql] ()
+2025-11-07 10:08:17,743 [INFO] COMMIT
+2025-11-07 10:08:17,764 [WARNING]  * Debugger is active!
+2025-11-07 10:08:17,766 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:23,807 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:23,899 [INFO]  * Restarting with stat
+2025-11-07 10:08:24,814 [INFO] BEGIN (implicit)
+2025-11-07 10:08:24,814 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:24,815 [INFO] [raw sql] ()
+2025-11-07 10:08:24,817 [INFO] COMMIT
+2025-11-07 10:08:24,839 [WARNING]  * Debugger is active!
+2025-11-07 10:08:24,840 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:25,858 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:25,963 [INFO]  * Restarting with stat
+2025-11-07 10:08:26,847 [INFO] BEGIN (implicit)
+2025-11-07 10:08:26,848 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:26,848 [INFO] [raw sql] ()
+2025-11-07 10:08:26,849 [INFO] COMMIT
+2025-11-07 10:08:26,872 [WARNING]  * Debugger is active!
+2025-11-07 10:08:26,874 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:28,902 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:28,999 [INFO]  * Restarting with stat
+2025-11-07 10:08:29,993 [INFO] BEGIN (implicit)
+2025-11-07 10:08:29,994 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:29,994 [INFO] [raw sql] ()
+2025-11-07 10:08:29,996 [INFO] COMMIT
+2025-11-07 10:08:30,025 [WARNING]  * Debugger is active!
+2025-11-07 10:08:30,028 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:35,064 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:35,165 [INFO]  * Restarting with stat
+2025-11-07 10:08:36,054 [INFO] BEGIN (implicit)
+2025-11-07 10:08:36,055 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:36,056 [INFO] [raw sql] ()
+2025-11-07 10:08:36,057 [INFO] COMMIT
+2025-11-07 10:08:36,084 [WARNING]  * Debugger is active!
+2025-11-07 10:08:36,086 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:38,108 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:38,194 [INFO]  * Restarting with stat
+2025-11-07 10:08:39,043 [INFO] BEGIN (implicit)
+2025-11-07 10:08:39,044 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:39,044 [INFO] [raw sql] ()
+2025-11-07 10:08:39,046 [INFO] COMMIT
+2025-11-07 10:08:39,076 [WARNING]  * Debugger is active!
+2025-11-07 10:08:39,081 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:40,103 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:40,199 [INFO]  * Restarting with stat
+2025-11-07 10:08:41,048 [INFO] BEGIN (implicit)
+2025-11-07 10:08:41,048 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:41,049 [INFO] [raw sql] ()
+2025-11-07 10:08:41,050 [INFO] COMMIT
+2025-11-07 10:08:41,067 [WARNING]  * Debugger is active!
+2025-11-07 10:08:41,069 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:47,112 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:47,204 [INFO]  * Restarting with stat
+2025-11-07 10:08:48,095 [INFO] BEGIN (implicit)
+2025-11-07 10:08:48,096 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:48,097 [INFO] [raw sql] ()
+2025-11-07 10:08:48,098 [INFO] COMMIT
+2025-11-07 10:08:48,131 [WARNING]  * Debugger is active!
+2025-11-07 10:08:48,136 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:08:52,168 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:08:52,267 [INFO]  * Restarting with stat
+2025-11-07 10:08:53,181 [INFO] BEGIN (implicit)
+2025-11-07 10:08:53,182 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:08:53,183 [INFO] [raw sql] ()
+2025-11-07 10:08:53,184 [INFO] COMMIT
+2025-11-07 10:08:53,214 [WARNING]  * Debugger is active!
+2025-11-07 10:08:53,218 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:09:03,287 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:09:03,387 [INFO]  * Restarting with stat
+2025-11-07 10:09:04,233 [INFO] BEGIN (implicit)
+2025-11-07 10:09:04,235 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:09:04,236 [INFO] [raw sql] ()
+2025-11-07 10:09:04,237 [INFO] COMMIT
+2025-11-07 10:09:04,259 [WARNING]  * Debugger is active!
+2025-11-07 10:09:04,261 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:09:06,293 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:09:06,418 [INFO]  * Restarting with stat
+2025-11-07 10:09:07,461 [INFO] BEGIN (implicit)
+2025-11-07 10:09:07,462 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:09:07,463 [INFO] [raw sql] ()
+2025-11-07 10:09:07,466 [INFO] COMMIT
+2025-11-07 10:09:07,495 [WARNING]  * Debugger is active!
+2025-11-07 10:09:07,499 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:09:10,537 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:09:10,650 [INFO]  * Restarting with stat
+2025-11-07 10:09:11,678 [INFO] BEGIN (implicit)
+2025-11-07 10:09:11,679 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:09:11,680 [INFO] [raw sql] ()
+2025-11-07 10:09:11,681 [INFO] COMMIT
+2025-11-07 10:09:11,705 [WARNING]  * Debugger is active!
+2025-11-07 10:09:11,709 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:09:12,734 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\exceptions.py', reloading
+2025-11-07 10:09:12,872 [INFO]  * Restarting with stat
+2025-11-07 10:09:14,053 [INFO] BEGIN (implicit)
+2025-11-07 10:09:14,054 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:09:14,054 [INFO] [raw sql] ()
+2025-11-07 10:09:14,056 [INFO] COMMIT
+2025-11-07 10:09:14,126 [WARNING]  * Debugger is active!
+2025-11-07 10:09:14,131 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:19:26,374 [INFO] BEGIN (implicit)
+2025-11-07 10:19:26,375 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:19:26,376 [INFO] [raw sql] ()
+2025-11-07 10:19:26,377 [INFO] COMMIT
+2025-11-07 10:19:26,402 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-07 10:19:26,402 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-07 10:19:26,404 [INFO]  * Restarting with stat
+2025-11-07 10:19:27,005 [INFO] BEGIN (implicit)
+2025-11-07 10:19:27,007 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:19:27,007 [INFO] [raw sql] ()
+2025-11-07 10:19:27,008 [INFO] COMMIT
+2025-11-07 10:19:27,028 [WARNING]  * Debugger is active!
+2025-11-07 10:19:27,030 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:19:38,612 [INFO] BEGIN (implicit)
+2025-11-07 10:19:38,615 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:19:38,616 [INFO] [generated in 0.00091s] ()
+2025-11-07 10:19:38,617 [INFO] Read all products.
+2025-11-07 10:19:38,617 [INFO] ROLLBACK
+2025-11-07 10:19:38,618 [INFO] 127.0.0.1 - - [07/Nov/2025 10:19:38] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:20:20,012 [INFO] BEGIN (implicit)
+2025-11-07 10:20:20,014 [INFO] INSERT INTO products (name, quantity, price) VALUES (?, ?, ?)
+2025-11-07 10:20:20,015 [INFO] [generated in 0.00102s] ('Iphone', 15, 250000.0)
+2025-11-07 10:20:20,018 [INFO] COMMIT
+2025-11-07 10:20:20,026 [INFO] Product Added Successfully
+2025-11-07 10:20:20,027 [INFO] BEGIN (implicit)
+2025-11-07 10:20:20,029 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+2025-11-07 10:20:20,029 [INFO] [generated in 0.00081s] (7,)
+2025-11-07 10:20:20,031 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:20:20,032 [INFO] [generated in 0.00043s] (7, 1, 0)
+2025-11-07 10:20:20,032 [INFO] Read product for given id.
+2025-11-07 10:20:23,125 [INFO] ROLLBACK
+2025-11-07 10:20:23,126 [INFO] 127.0.0.1 - - [07/Nov/2025 10:20:23] "[35m[1mPOST /products HTTP/1.1[0m" 201 -
+2025-11-07 10:21:04,555 [INFO] 127.0.0.1 - - [07/Nov/2025 10:21:04] "[31m[1mPUT /products HTTP/1.1[0m" 405 -
+2025-11-07 10:21:05,842 [INFO] 127.0.0.1 - - [07/Nov/2025 10:21:05] "[31m[1mPUT /products HTTP/1.1[0m" 405 -
+2025-11-07 10:21:06,589 [INFO] 127.0.0.1 - - [07/Nov/2025 10:21:06] "[31m[1mPUT /products HTTP/1.1[0m" 405 -
+2025-11-07 10:21:18,620 [INFO] BEGIN (implicit)
+2025-11-07 10:21:18,622 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:21:18,623 [INFO] [cached since 100s ago] ()
+2025-11-07 10:21:18,624 [INFO] Read all products.
+2025-11-07 10:21:18,624 [INFO] ROLLBACK
+2025-11-07 10:21:18,625 [INFO] 127.0.0.1 - - [07/Nov/2025 10:21:18] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:21:28,107 [INFO] BEGIN (implicit)
+2025-11-07 10:21:28,108 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:21:28,108 [INFO] [cached since 68.08s ago] (7, 1, 0)
+2025-11-07 10:21:28,109 [INFO] Read product for given id.
+2025-11-07 10:21:28,109 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:21:28,110 [INFO] [cached since 68.08s ago] (7, 1, 0)
+2025-11-07 10:21:28,111 [INFO] Read product for given id.
+2025-11-07 10:21:28,112 [INFO] UPDATE products SET quantity=?, price=? WHERE products.id = ?
+2025-11-07 10:21:28,113 [INFO] [generated in 0.00072s] (16, 150000.0, 7)
+2025-11-07 10:21:28,116 [INFO] COMMIT
+2025-11-07 10:21:28,126 [INFO] Product Updated Successfully
+2025-11-07 10:21:28,127 [INFO] BEGIN (implicit)
+2025-11-07 10:21:28,128 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:21:28,128 [INFO] [cached since 68.1s ago] (7, 1, 0)
+2025-11-07 10:21:28,130 [INFO] Read product for given id.
+2025-11-07 10:21:28,130 [INFO] ROLLBACK
+2025-11-07 10:21:28,131 [INFO] 127.0.0.1 - - [07/Nov/2025 10:21:28] "PUT /products/7 HTTP/1.1" 200 -
+2025-11-07 10:21:46,087 [INFO] BEGIN (implicit)
+2025-11-07 10:21:46,090 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:21:46,092 [INFO] [cached since 86.06s ago] (5, 1, 0)
+2025-11-07 10:21:46,096 [INFO] Read product for given id.
+2025-11-07 10:21:46,099 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:21:46,101 [INFO] [cached since 86.07s ago] (5, 1, 0)
+2025-11-07 10:21:46,103 [INFO] Read product for given id.
+2025-11-07 10:21:46,105 [INFO] DELETE FROM products WHERE products.id = ?
+2025-11-07 10:21:46,106 [INFO] [generated in 0.00125s] (5,)
+2025-11-07 10:21:46,110 [INFO] COMMIT
+2025-11-07 10:21:46,120 [INFO] Product Deleted Successfully
+2025-11-07 10:21:46,120 [INFO] 127.0.0.1 - - [07/Nov/2025 10:21:46] "DELETE /products/5 HTTP/1.1" 200 -
+2025-11-07 10:21:54,139 [INFO] BEGIN (implicit)
+2025-11-07 10:21:54,140 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:21:54,141 [INFO] [cached since 135.5s ago] ()
+2025-11-07 10:21:54,143 [INFO] Read all products.
+2025-11-07 10:21:54,144 [INFO] ROLLBACK
+2025-11-07 10:21:54,145 [INFO] 127.0.0.1 - - [07/Nov/2025 10:21:54] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:24:23,428 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 10:24:23,498 [INFO]  * Restarting with stat
+2025-11-07 10:24:24,143 [INFO] BEGIN (implicit)
+2025-11-07 10:24:24,144 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:24:24,144 [INFO] [raw sql] ()
+2025-11-07 10:24:24,144 [INFO] COMMIT
+2025-11-07 10:24:24,157 [WARNING]  * Debugger is active!
+2025-11-07 10:24:24,159 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:24:26,172 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 10:24:26,251 [INFO]  * Restarting with stat
+2025-11-07 10:24:26,855 [INFO] BEGIN (implicit)
+2025-11-07 10:24:26,855 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:24:26,855 [INFO] [raw sql] ()
+2025-11-07 10:24:26,857 [INFO] COMMIT
+2025-11-07 10:24:26,872 [WARNING]  * Debugger is active!
+2025-11-07 10:24:26,873 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:24:32,904 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\scrapper.py', reloading
+2025-11-07 10:24:32,966 [INFO]  * Restarting with stat
+2025-11-07 10:24:33,664 [INFO] BEGIN (implicit)
+2025-11-07 10:24:33,664 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:24:33,666 [INFO] [raw sql] ()
+2025-11-07 10:24:33,667 [INFO] COMMIT
+2025-11-07 10:24:33,683 [WARNING]  * Debugger is active!
+2025-11-07 10:24:33,685 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:29:25,192 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_crud.py', reloading
+2025-11-07 10:29:25,249 [INFO]  * Restarting with stat
+2025-11-07 10:29:25,814 [INFO] BEGIN (implicit)
+2025-11-07 10:29:25,815 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:29:25,815 [INFO] [raw sql] ()
+2025-11-07 10:29:25,816 [INFO] COMMIT
+2025-11-07 10:29:25,829 [WARNING]  * Debugger is active!
+2025-11-07 10:29:25,831 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:29:26,844 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_crud.py', reloading
+2025-11-07 10:29:26,913 [INFO]  * Restarting with stat
+2025-11-07 10:29:27,495 [INFO] BEGIN (implicit)
+2025-11-07 10:29:27,496 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:29:27,496 [INFO] [raw sql] ()
+2025-11-07 10:29:27,498 [INFO] COMMIT
+2025-11-07 10:29:27,518 [WARNING]  * Debugger is active!
+2025-11-07 10:29:27,520 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:29:30,543 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_crud.py', reloading
+2025-11-07 10:29:30,600 [INFO]  * Restarting with stat
+2025-11-07 10:29:31,254 [INFO] BEGIN (implicit)
+2025-11-07 10:29:31,254 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:29:31,255 [INFO] [raw sql] ()
+2025-11-07 10:29:31,256 [INFO] COMMIT
+2025-11-07 10:29:31,280 [WARNING]  * Debugger is active!
+2025-11-07 10:29:31,281 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:29:49,371 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_crud.py', reloading
+2025-11-07 10:29:49,435 [INFO]  * Restarting with stat
+2025-11-07 10:29:50,052 [INFO] BEGIN (implicit)
+2025-11-07 10:29:50,052 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:29:50,053 [INFO] [raw sql] ()
+2025-11-07 10:29:50,053 [INFO] COMMIT
+2025-11-07 10:29:50,068 [WARNING]  * Debugger is active!
+2025-11-07 10:29:50,070 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:29:52,083 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_crud.py', reloading
+2025-11-07 10:29:52,143 [INFO]  * Restarting with stat
+2025-11-07 10:29:52,721 [INFO] BEGIN (implicit)
+2025-11-07 10:29:52,722 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:29:52,722 [INFO] [raw sql] ()
+2025-11-07 10:29:52,722 [INFO] COMMIT
+2025-11-07 10:29:52,735 [WARNING]  * Debugger is active!
+2025-11-07 10:29:52,736 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:30:13,817 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\tests\\test_crud.py', reloading
+2025-11-07 10:30:13,890 [INFO]  * Restarting with stat
+2025-11-07 10:30:14,495 [INFO] BEGIN (implicit)
+2025-11-07 10:30:14,496 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:30:14,496 [INFO] [raw sql] ()
+2025-11-07 10:30:14,497 [INFO] COMMIT
+2025-11-07 10:30:14,512 [WARNING]  * Debugger is active!
+2025-11-07 10:30:14,513 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:32:33,377 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 10:32:33,444 [INFO]  * Restarting with stat
+2025-11-07 10:32:34,168 [INFO] BEGIN (implicit)
+2025-11-07 10:32:34,169 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:32:34,169 [INFO] [raw sql] ()
+2025-11-07 10:32:34,170 [INFO] COMMIT
+2025-11-07 10:32:34,193 [WARNING]  * Debugger is active!
+2025-11-07 10:32:34,196 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:32:37,230 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 10:32:37,330 [INFO]  * Restarting with stat
+2025-11-07 10:32:38,043 [INFO] BEGIN (implicit)
+2025-11-07 10:32:38,043 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:32:38,044 [INFO] [raw sql] ()
+2025-11-07 10:32:38,045 [INFO] COMMIT
+2025-11-07 10:32:38,060 [WARNING]  * Debugger is active!
+2025-11-07 10:32:38,062 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:32:39,082 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 10:32:39,140 [INFO]  * Restarting with stat
+2025-11-07 10:32:39,808 [INFO] BEGIN (implicit)
+2025-11-07 10:32:39,808 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:32:39,809 [INFO] [raw sql] ()
+2025-11-07 10:32:39,809 [INFO] COMMIT
+2025-11-07 10:32:39,823 [WARNING]  * Debugger is active!
+2025-11-07 10:32:39,825 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:32:44,849 [INFO]  * Detected change in 'c:\\Users\\ysridurg\\OneDrive - Cisco\\Documents\\GitHub\\Project-Product-Management-System\\app\\config.py', reloading
+2025-11-07 10:32:44,913 [INFO]  * Restarting with stat
+2025-11-07 10:32:45,475 [INFO] BEGIN (implicit)
+2025-11-07 10:32:45,476 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:32:45,476 [INFO] [raw sql] ()
+2025-11-07 10:32:45,477 [INFO] COMMIT
+2025-11-07 10:32:45,489 [WARNING]  * Debugger is active!
+2025-11-07 10:32:45,491 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:33:27,464 [INFO] BEGIN (implicit)
+2025-11-07 10:33:27,465 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:33:27,465 [INFO] [raw sql] ()
+2025-11-07 10:33:27,466 [INFO] COMMIT
+2025-11-07 10:33:27,491 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-07 10:33:27,491 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-07 10:33:27,493 [INFO]  * Restarting with stat
+2025-11-07 10:33:28,051 [INFO] BEGIN (implicit)
+2025-11-07 10:33:28,051 [INFO] PRAGMA main.table_info("products")
+2025-11-07 10:33:28,053 [INFO] [raw sql] ()
+2025-11-07 10:33:28,053 [INFO] COMMIT
+2025-11-07 10:33:28,066 [WARNING]  * Debugger is active!
+2025-11-07 10:33:28,067 [INFO]  * Debugger PIN: 129-868-837
+2025-11-07 10:33:37,742 [INFO] BEGIN (implicit)
+2025-11-07 10:33:37,747 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:33:37,749 [INFO] [generated in 0.00133s] ()
+2025-11-07 10:33:37,750 [INFO] Read all products.
+2025-11-07 10:33:37,750 [INFO] ROLLBACK
+2025-11-07 10:33:37,751 [INFO] 127.0.0.1 - - [07/Nov/2025 10:33:37] "GET /products HTTP/1.1" 200 -
+2025-11-07 10:34:38,603 [INFO] BEGIN (implicit)
+2025-11-07 10:34:38,607 [INFO] INSERT INTO products (name, quantity, price) VALUES (?, ?, ?)
+2025-11-07 10:34:38,608 [INFO] [generated in 0.00125s] ('SmartTv', 20, 100000.0)
+2025-11-07 10:34:38,619 [INFO] COMMIT
+2025-11-07 10:34:38,636 [INFO] Product Added Successfully
+2025-11-07 10:34:38,640 [INFO] BEGIN (implicit)
+2025-11-07 10:34:38,644 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+2025-11-07 10:34:38,646 [INFO] [generated in 0.00138s] (8,)
+2025-11-07 10:34:38,649 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products 
+WHERE products.id = ?
+ LIMIT ? OFFSET ?
+2025-11-07 10:34:38,650 [INFO] [generated in 0.00107s] (8, 1, 0)
+2025-11-07 10:34:38,651 [INFO] Read product for given id.
+2025-11-07 10:34:41,818 [INFO] ROLLBACK
+2025-11-07 10:34:41,819 [INFO] 127.0.0.1 - - [07/Nov/2025 10:34:41] "[35m[1mPOST /products HTTP/1.1[0m" 201 -
+2025-11-07 10:34:50,955 [INFO] BEGIN (implicit)
+2025-11-07 10:34:50,956 [INFO] SELECT products.id AS products_id, products.name AS products_name, products.quantity AS products_quantity, products.price AS products_price 
+FROM products
+2025-11-07 10:34:50,957 [INFO] [cached since 73.21s ago] ()
+2025-11-07 10:34:50,957 [INFO] Read all products.
+2025-11-07 10:34:50,958 [INFO] ROLLBACK
+2025-11-07 10:34:50,959 [INFO] 127.0.0.1 - - [07/Nov/2025 10:34:50] "GET /products HTTP/1.1" 200 -
