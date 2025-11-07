@@ -1,5 +1,20 @@
-"provides crud operations"
-from sqlalchemy.exc import SQLAlchemyError, IntegrityError
+"""
+This module provides a set of functions for performing CRUD (Create, Read, Update, Delete) operations
+on the Product model within a SQLAlchemy-managed database.
+It includes functions to:
+- Read all existing products.
+- Add a new product, with error handling for duplicate entries and general database issues.
+- Search for a specific product by its ID.
+- Update the price and quantity of an existing product.
+- Delete a product by its ID.
+Error handling is implemented using custom exceptions (ProductAlreadyExistError, DatabaseError)
+and logging is integrated to track operations and errors.
+"""
+#from sqlalchemy.exc import SQLAlchemyError, IntegrityError
+from sqlalchemy.exc import (
+    SQLAlchemyError,
+    IntegrityError
+)
 from app.models import db, Product
 from .exceptions import  ProductAlreadyExistError, DatabaseError
 from .logger import logging

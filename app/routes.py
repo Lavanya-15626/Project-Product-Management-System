@@ -1,6 +1,6 @@
-import app.crud as crud 
+import app.crud as crud
 
-from flask import Flask, request, jsonify 
+from flask import Flask, request, jsonify
 
 from app.emailer import send_gmail, to_address
 
@@ -10,7 +10,7 @@ application = Flask(__name__)
 
 # configure the db 
 application.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///prdct_app_db.sqlite'
-application.config['SQLALCHEMY_ECHO'] = True 
+application.config['SQLALCHEMY_ECHO'] = True
 crud.db.init_app(application)
 #       create tables
 with application.app_context():
@@ -58,10 +58,10 @@ Name: {created_product.name}
 quantity: {created_product.quantity}
 Price : {created_product.price}
 '''
-    send_gmail(to_address = to_address, 
-               subject = subject, 
+    send_gmail(to_address = to_address,
+               subject = subject,
                body = body)
-    # log the mail sent info 
+    # log the mail sent info
     #end sending creation mail
     return jsonify(created_product.to_dict()), 201
     #crud.add_product(product)
@@ -87,7 +87,7 @@ def delete_product(prdct_id):
     prdct_id = int(prdct_id)
     queried_product = crud.search_product(prdct_id)
     if not queried_product: #
-        return jsonify({'error' : 'Product Not Found.'}), 404  # 
+        return jsonify({'error' : 'Product Not Found.'}), 404  #
     
     crud.delete_product(prdct_id)
     return jsonify({'message' : 'Product Deleted Successfully'})
