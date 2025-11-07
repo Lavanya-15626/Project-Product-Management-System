@@ -1,7 +1,7 @@
 '''
     api crud
 '''
-import requests 
+import requests
 
 BASE_URL = 'http://127.0.0.1:5000'
 
@@ -9,7 +9,7 @@ def read_all_products():
     url = f'{BASE_URL}/products'
     response = requests.get(url)
     products = response.json()
-    return products 
+    return products
 
 def add_product(product):
     url = f'{BASE_URL}/products'
